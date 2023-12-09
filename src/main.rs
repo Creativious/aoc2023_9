@@ -16,8 +16,8 @@ fn main() {
         part_1_total += guessed_value_part_1;
         part_2_total += guessed_value_part_2;
     }
-    println!("The total is {}", part_1_total);
-    println!("The total is {}", part_2_total);
+    println!("The total is for part 1 {}", part_1_total);
+    println!("The total is for part 2 {}", part_2_total);
 }
 
 fn get_guessed_value_part_1(input_numbers: Vec<i64>) -> i64{

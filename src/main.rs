@@ -5,7 +5,6 @@ use std::io::BufRead;
 use regex::Regex;
 
 fn main() {
-    println!("Hello, world!");
     let mut part_1_total = 0;
     let mut part_2_total = 0;
     let file_lines = read_lines("puzzle_input.txt");
@@ -92,7 +91,6 @@ fn get_guessed_value_part_2(input_numbers: Vec<i64>) -> i64{
     let mut first_number = 0;
     loop {
         let mut number_list = numbers_list_maps.get(&x).unwrap();
-        println!("{}", &number_list.get(0).unwrap());
         first_number = number_list.get(0).unwrap() - first_number.clone();
         if x == 0 {
             break;
